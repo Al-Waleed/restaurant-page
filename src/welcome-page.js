@@ -17,7 +17,7 @@ export function workingHours(){
     const div = document.createElement("div");
     div.classList.add("workingHours");
     const para = document.createElement("p");
-    para.innerHTML = "Working Hours"
+    para.innerHTML = "Working Hours:"
     const list = document.createElement("ul");
 
     content.appendChild(div)
