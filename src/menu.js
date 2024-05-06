@@ -4,7 +4,7 @@ export default function menu(){
     const menuHeader = document.createElement("h1");
     menuHeader.innerText = "Menu"
     content.appendChild(menuHeader);
-    
+
     const menuDiv = document.createElement("div")
     menuDiv.classList.add("menu");
     content.appendChild(menuDiv);
@@ -43,13 +43,13 @@ export default function menu(){
     menuDiv.appendChild(drinksDiv);
 
     const drinksHeader = document.createElement("h2");
-    drinksHeader.innerText = "Main Dishes";
+    drinksHeader.innerText = "Drinks";
     drinksDiv.appendChild(drinksHeader);
 
     const drinksList = document.createElement("ul");
     drinksDiv.appendChild(drinksList);
 
-    const drinks = ["Boiled Charcoal", "Fried Charcoal", "Steamed Charcoal", "Roasted Charcoal"]
+    const drinks = ["Water", "Cola", "Fanta"]
     drinks.forEach(item => createList(drinksList, item));
 
 }
