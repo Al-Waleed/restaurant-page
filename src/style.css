@@ -50,3 +50,19 @@ button{
     margin: 0 0 2px 0;
     font-size: 18px;
 }
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 764px;
+}
+
+.menu > div > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > div{
+    padding-right: 32px;
+}

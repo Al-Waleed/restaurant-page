@@ -3,6 +3,8 @@ import home from "./welcome-page";
 import menu from './menu';
 import about from './about';
 
+home();
+
 const homeButton = document.querySelector("#home");
 homeButton.addEventListener("click", () => displayPage(home));
 
