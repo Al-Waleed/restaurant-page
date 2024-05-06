@@ -1,13 +1,14 @@
 export default function menu(){
     const content = document.querySelector("#content");
 
+    const menuHeader = document.createElement("h1");
+    menuHeader.innerText = "Menu"
+    content.appendChild(menuHeader);
+    
     const menuDiv = document.createElement("div")
     menuDiv.classList.add("menu");
     content.appendChild(menuDiv);
 
-    const menuHeader = document.createElement("h1");
-    menuHeader.innerText = "Menu"
-    menuDiv.appendChild(menuHeader);
 
     const startersDiv = document.createElement("div");
     startersDiv.classList.add("starters");
