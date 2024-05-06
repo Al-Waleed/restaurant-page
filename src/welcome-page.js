@@ -16,8 +16,15 @@ export function workingHours(){
     const content = document.querySelector("#content");
     const div = document.createElement("div");
     div.classList.add("workingHours");
+    const para = document.createElement("p");
+    para.innerHTML = "Working Hours"
+    const list = document.createElement("ul");
 
     content.appendChild(div)
+    div.appendChild(para)
+    div.appendChild(list)
+
+
     
     const listItems = ["Sunday: 12:00 - 23:00",
         "Monday: 12:00 - 23:00",
@@ -33,7 +40,7 @@ export function workingHours(){
         const listItem = document.createElement("li");
         listItem.innerText = item;
         listItem.classList.add("workingHoursList");
-        div.appendChild(listItem);
+        list.appendChild(listItem);
 
         
     });
