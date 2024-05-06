@@ -1,4 +1,6 @@
 import './style.css'
-import test from "./welcome-page"
+import welcome, {workingHours} from "./welcome-page"
 
-test()
+welcome()
+
+workingHours();

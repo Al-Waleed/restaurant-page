@@ -1,15 +1,3 @@
-const content = document.querySelector("#content");
-const div = document.createElement("div");
-const list = document.createElement("ul");
-const listItem = document.createElement("li");
-const h1 = document.createElement("h1");
-const h2 = document.createElement("h2");
-
-div.classList.add("welcome");
-div.innerText = "ASDASDASD"
-
-content.appendChild(div);
-
 export default function welcome(){
 
     const content = document.querySelector("#content");
@@ -22,5 +10,32 @@ export default function welcome(){
     h2.innerText = "We serve boiled, fried, steamed and roasted charcoal";
     div.appendChild(h1);
     div.appendChild(h2);
+}
+
+export function workingHours(){
+    const content = document.querySelector("#content");
+    const div = document.createElement("div");
+    div.classList.add("workingHours");
+
+    content.appendChild(div)
+    
+    const listItems = ["Sunday: 12:00 - 23:00",
+        "Monday: 12:00 - 23:00",
+        "Tuesday: 12:00 - 23:00",
+        "Wednesday: 12:00 - 23:00",
+        "Thursday: 12:00 - 01:00",
+        "Friday: 14:00 - 01:00",
+        "Saturday: 12:00 - 23:00"
+    ]
+
+    listItems.forEach(item => {
+
+        const listItem = document.createElement("li");
+        listItem.innerText = item;
+        listItem.classList.add("workingHoursList");
+        div.appendChild(listItem);
+
+        
+    });
 }
 
