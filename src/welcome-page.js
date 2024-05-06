@@ -10,9 +10,11 @@ export default function welcome(){
     h2.innerText = "We serve boiled, fried, steamed and roasted charcoal";
     div.appendChild(h1);
     div.appendChild(h2);
+
+    workingHours();
 }
 
-export function workingHours(){
+function workingHours(){
     const content = document.querySelector("#content");
     const div = document.createElement("div");
     div.classList.add("workingHours");
